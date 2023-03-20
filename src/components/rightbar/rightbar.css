@@ -1,0 +1,7 @@
+.rightbar{
+    flex: 4;
+    border: 2px solid rgb(255, 223, 61);
+    height: calc(100vh - 53px);
+
+
+}
