@@ -14,7 +14,10 @@
     display: flex;
     justify-content:flex-start;
      align-items: center;
-     margin: 10px 0px;
+     margin-top: 10px;
+     padding-top: 10px;
+    /* border: 2px solid rgb(244, 20, 20); */
+
 }
 
 
@@ -42,7 +45,6 @@
 }
 
 .lowershare{
-    /* border: 2px solid rgb(244, 20, 20); */
     display: flex;
     justify-content:flex-start;
     align-items: center;
