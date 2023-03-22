@@ -1,7 +1,10 @@
 .leftbar{
     flex: 3;
-    height: calc(100vh - 53px);
+    height: calc(100vh - 50px);
     overflow-y: scroll;
+    position: sticky;
+    top: 50px;
+    /* border: 2px solid red; */
 
 }
 
@@ -17,6 +20,7 @@
 
 .sidebarWrapper{
     padding: 10px 10px;
+
 }
 
 .sidebarList{
@@ -86,7 +90,6 @@
 }
 
 .leftfriendlistItem{
-    /* border: 2px solid red; */
     display: flex;
     width: 90%;
     margin: 5px 10px;

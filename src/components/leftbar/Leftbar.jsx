@@ -1,4 +1,5 @@
 import "./leftbar.css";
+import { Users } from "../../DummyData";
 import {
   RssFeed,
   Chat,
@@ -56,78 +57,18 @@ export default function Leftbar() {
         <button className="sidebarButton">Show More</button>
         <hr className="leftbarhr" />
         <ul className="leftfriendlist">
-          <li className="leftfriendlistItem">
-            <img
-              src="/assets/person/1.jpeg"
-              alt=""
-              className="leftFriendImage"
-            />
-            <span className="leftFriendName">Faiz Ahmad</span>
-          </li>
-          <li className="leftfriendlistItem">
-            <img
-              src="/assets/person/1.jpeg"
-              alt=""
-              className="leftFriendImage"
-            />
-            <span className="leftFriendName">Faiz Ahmad</span>
-          </li>
-          <li className="leftfriendlistItem">
-            <img
-              src="/assets/person/1.jpeg"
-              alt=""
-              className="leftFriendImage"
-            />
-            <span className="leftFriendName">Faiz Ahmad</span>
-          </li>
-          <li className="leftfriendlistItem">
-            <img
-              src="/assets/person/1.jpeg"
-              alt=""
-              className="leftFriendImage"
-            />
-            <span className="leftFriendName">Faiz Ahmad</span>
-          </li>
-          <li className="leftfriendlistItem">
-            <img
-              src="/assets/person/1.jpeg"
-              alt=""
-              className="leftFriendImage"
-            />
-            <span className="leftFriendName">Faiz Ahmad</span>
-          </li>
-          <li className="leftfriendlistItem">
-            <img
-              src="/assets/person/1.jpeg"
-              alt=""
-              className="leftFriendImage"
-            />
-            <span className="leftFriendName">Faiz Ahmad</span>
-          </li>
-          <li className="leftfriendlistItem">
-            <img
-              src="/assets/person/1.jpeg"
-              alt=""
-              className="leftFriendImage"
-            />
-            <span className="leftFriendName">Faiz Ahmad</span>
-          </li>
-          <li className="leftfriendlistItem">
-            <img
-              src="/assets/person/1.jpeg"
-              alt=""
-              className="leftFriendImage"
-            />
-            <span className="leftFriendName">Faiz Ahmad</span>
-          </li>
-          <li className="leftfriendlistItem">
-            <img
-              src="/assets/person/1.jpeg"
-              alt=""
-              className="leftFriendImage"
-            />
-            <span className="leftFriendName">Faiz Ahmad</span>
-          </li>
+          {Users.map((e, idx) => {
+            return (
+              <li className="leftfriendlistItem">
+                <img
+                  src={e.profilePicture}
+                  alt={e.id}
+                  className="leftFriendImage"
+                />
+                <span className="leftFriendName">{e.username} </span>
+              </li>
+            );
+          })}
         </ul>
       </div>
     </div>

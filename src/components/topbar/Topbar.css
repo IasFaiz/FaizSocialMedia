@@ -4,6 +4,10 @@
     justify-content:space-between;
     align-items: center;
     height: 50px;
+    position: sticky;
+    top: 0px;
+    /* border: 2px solid red; */
+    z-index: 999;
 }
 
 .topbarLeft{
