@@ -5,3 +5,81 @@
 
 
 }
+
+.rightbarcontainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.birthdaybox{
+    display: flex;
+    align-items: center;
+    margin: 10px 10px;
+}
+
+.birthdayimage{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+
+.birthdaytext{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.adimage{
+    width: 95%;
+    border-radius: 10px;
+    margin: 10px 10px;
+}
+
+.onlinefriends{
+    display: flex;
+    align-items:flex-start;
+    flex-direction: column;
+}
+
+.onlinefriendtitle{
+        font-size: 18px;
+        margin: 10px 20px;
+        font-weight: 500;
+}
+
+.onlinefriendscontainer{
+    display: flex;
+    align-items: center;
+    margin: 2px 10px;
+}
+
+.onlineimage{
+    width: 35px;
+    height: 35px;
+    margin: 10px;
+    border-radius: 50%;
+    object-fit: cover;
+
+
+
+}
+
+.onlinefriendname{
+    font-size: 16px;
+}
+
+.imageandonline{
+    display: flex;
+    position: relative;
+}
+
+.onlinetag{
+    position:absolute;
+    width: 8px;
+    height: 8px;
+    background-color: rgb(144, 239, 0);
+    border-radius: 50%;
+    top: 10px;
+    right: 10px;
+    border: 2px solid rgb(255, 255, 255);
+
+}
